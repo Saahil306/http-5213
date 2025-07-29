@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickCover – Internship Cover Letter Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QuickCover ✉️</h1>
+    <p>Create a simple, personalized cover letter for internship applications.</p>
+
+    <form id="coverForm">
+      <label for="yourName">Your Name:</label>
+      <input type="text" id="yourName" required>
+
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" required>
+
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" required>
+
+      <label for="highlights">Your Resume Highlights (comma separated):</label>
+      <textarea id="highlights" rows="4" required></textarea>
+
+      <button type="submit">Generate Cover Letter</button>
+    </form>
+
+    <div id="output">
+      <h2>Generated Cover Letter</h2>
+      <pre id="letterText"></pre>
+      <button id="copyBtn">Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
